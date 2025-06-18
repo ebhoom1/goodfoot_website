@@ -1,0 +1,33 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: white; }
+}
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
+.custom-shape-divider-bottom-hero {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+}
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
