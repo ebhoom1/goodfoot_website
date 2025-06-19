@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 // Image imports
 import eligibilityImg from "../../assets/images/eligibility.png";
 import appPurposeImg from "../../assets/images/apppurpose.png";
