@@ -14,6 +14,7 @@ import prohibitedImg from "../../assets/images/prohibited.png";
 import brandImg from "../../assets/images/brand.png";
 import modificationsImg from "../../assets/images/modifications.png";
 import intellectualImg from "../../assets/images/intelectual.png";
+import lawImg from "../../assets/images/law.png";
 import contactUsImg from "../../assets/images/contactus.png";
 
 const sections = [
@@ -32,43 +33,43 @@ const sections = [
   {
     title: "Account Registration",
     content:
-      "You may register using Google Sign-In or Email. You are responsible for maintaining the confidentiality of your login credentials.",
+      "You may register using Google Sign-In or Email. You are responsible for maintaining the confidentiality of your login credentials.We are not liable for any unauthorised account access.",
     image: registrationImg,
   },
   {
     title: "Communities and Organisations",
     content:
-      "Users can create communities with a minimum of 2 members and can be linked to one organisation. Verified organisations can access anonymous sustainability reports.",
+      "Users can create communities by selecting a geo-location and a name, with each community requiring a minimum of two members. Each user can be linked to only one organisation—such as a company, board, or municipality—and verified organisations can access anonymous sustainability reports for their members.",
     image: communitiesImg,
   },
   {
     title: "Eco Challenges & Eco Points",
     content:
-      "Users earn Eco Points via AI-verified challenges. Points contribute to individual, community, and organisation scores. No monetary rewards are provided.",
+      "Users earn Eco Points by completing challenges, with all submissions verified via Gemini AI. These Eco Points contribute to individual monthly scores, community monthly scores, and organisation annual scores. GoodFoot does not offer monetary rewards, deposits, coupons, or carbon credits.",
     image: ecochallengesImg,
   },
   {
     title: "Use of Location Data",
     content:
-      "Location access helps suggest nearby communities and show local challenges. It can be disabled at any time (some features may not work).",
+      "With your permission, GoodFoot may access your device’s location to auto-suggest nearby communities, enable map features, and show local challenge participation. You may disable location access at any time; however, some features may be limited.",
     image: locationImg,
   },
   {
     title: "Prohibited Activities",
     content:
-      "Users must not misrepresent data, impersonate others, upload fake challenges, or use the app for unapproved commercial advertising.",
+      "By using the app, you agree not to misrepresent information or identity, upload false or misleading challenge data, harass or impersonate other users, violate community guidelines, or use the app for commercial advertising without prior approval.",
     image: prohibitedImg,
   },
   {
     title: "Brand Sponsorships",
     content:
-      "Brands may apply to sponsor eco-challenges. Sponsored challenges are marked, and sponsorship doesn't affect point calculations.",
+      "Brands can apply to sponsor eco-challenges, which will be clearly marked as sponsored. Sponsorship does not influence challenge verification or Eco Point calculation. GoodFoot reserves the right to approve or reject any sponsorship application.",
     image: brandImg,
   },
   {
     title: "Modifications & Updates",
     content:
-      "We may update features or Terms without notice. Continued use indicates acceptance of changes.",
+      "We may update features, content, or Terms without prior notice. Continued use after changes means you accept the updated Terms.",
     image: modificationsImg,
   },
   {
@@ -76,6 +77,12 @@ const sections = [
     content:
       "All content on GoodFoot—including UI designs, challenge formats, logos, and analytics—is owned by GoodFoot or its licensors. You may not reuse or reproduce any part of the platform without written consent.",
     image: intellectualImg,
+  },
+  {
+    title: "Governing Law",
+    content:
+      "These Terms are governed by the laws of India. Any disputes shall be subject to the exclusive jurisdiction of the courts in [Your City, e.g., Bengaluru], India.",
+    image: lawImg,
   },
   {
     title: "Contact Us",

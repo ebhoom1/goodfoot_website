@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink,useNavigate } from "react-router-dom";
 import goodfootLogo from "../assets/images/goodfootlogo.png";
 
 const Header = () => {
+  const navigate=useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
@@ -17,7 +18,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto bg-gradient-to-r from-black via-green-900 to-black rounded-full px-6 py-3 flex items-center justify-between shadow-md relative">
 
         {/* Logo */}
-        <div className="flex items-center space-x-3">
+        <div className="flex items-center space-x-3 cursor-pointer" onClick={()=>{navigate("/")}}>
           <img src={goodfootLogo} alt="GoodFoot Logo" className="h-12" />
         </div>
 
