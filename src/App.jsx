@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import Home from "./pages/Home/Home";
+import Team from "./pages/Team/Team";
 import BrandSponsorship from "./pages/BrandSponsorship/BrandSponsorship";
 import PrivacyPolicy from "./pages/privacypolicy/privacyPolicy";
 import TermsConditions from "./pages/TermsAndConditions/TermsAndConditions";
@@ -27,6 +28,7 @@ function App() {
         <main className="flex-grow ">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/team" element={<Team />} />
              <Route path="/brand-sponsorship" element={<BrandSponsorship />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsConditions />} />

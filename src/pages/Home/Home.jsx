@@ -10,6 +10,10 @@ import orgImg from "../../assets/images/organization.png";
 import leaderboardImg from "../../assets/images/leaderboard.png";
 import brandImg from "../../assets/images/brandpartner.png";
 import peoplecareImg from "../../assets/images/ecochallenges.png";
+import leftimg from "../../assets/images/leftimg.png";
+import middleimg from "../../assets/images/middleimg.png";
+import rightimg from "../../assets/images/rightimg.png";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -84,38 +88,6 @@ export default function Home() {
   return (
     <div className="bg-black text-white font-sans overflow-x-hidden">
       {/* Hero Section */}
-      {/* <section className="bg-gradient-to-tr from-green-950 via-black to-black py-20 px-6 md:px-16 ">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-          <div className="md:w-1/2" data-aos="fade-right">
-            <div className="scale-[1.3] md:scale-[1.5]">
-              <DotLottieReact
-                src="https://lottie.host/ae0489cb-33ea-485a-a1ce-5c448d84305f/asz5WaEYeI.lottie"
-                loop
-                autoplay
-              />
-            </div>
-          </div>
-          <div
-            className="w-full md:w-1/2 text-center"
-            data-aos="fade-left"
-            data-aos-delay="200"
-          >
-            <h1 className="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-lime-300 to-emerald-500 drop-shadow-lg mb-6">
-              GoodFoot – The Climate Action App
-            </h1>
-            <p className="text-lg md:text-xl text-gray-300 mb-8 backdrop-blur-md bg-white/5 px-4 py-3 rounded-xl border border-white/10 shadow-inner">
-              A new way to live sustainably. Track your impact. Complete
-              real-world challenges. Join communities and support your
-              workplace’s green goals.
-            </p>
-            <div className="flex justify-center gap-6" data-aos="zoom-in" data-aos-delay="400">
-              <img src={playStore} alt="Google Play" className="h-12 hover:scale-105 transition-transform duration-200 cursor-pointer" />
-              <img src={appStore} alt="App Store" className="h-12 hover:scale-105 transition-transform duration-200 cursor-pointer" />
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       <div className="relative bg-gradient-to-b from-black via-black to-green-800 text-white">
         <section className="pt-24 pb-36 px-6 md:px-16 z-10 relative">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
@@ -211,44 +183,73 @@ export default function Home() {
         ))}
       </section>
 
-      {/* Coming Soon */}
-      <section className="relative py-32 px-6 text-center overflow-hidden mt-8">
-        <div
-          className="absolute w-72 h-72 bg-green-600 rounded-full opacity-20 left-[30%] top-10 blur-2xl animate-pulse-slow"
-          data-aos="zoom-in"
-          data-aos-delay="200"
-        />
-        <h2
-          className="text-4xl md:text-5xl font-extrabold text-white mb-6 drop-shadow-xl"
-          data-aos="zoom-in"
-          data-aos-delay="100"
-        >
-          Coming Soon
-        </h2>
-        <p
-          className="text-lg text-white max-w-xl mx-auto leading-relaxed"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          The future is sustainable. You’re already part of it. <br />
-          <span className="font-semibold text-green-300">GoodFoot</span> is how
-          you start.
-        </p>
-        <div
-          className="flex justify-center gap-5 mt-10"
-          data-aos="fade-up"
-          data-aos-delay="400"
-        >
-          <img
-            src={playStore}
-            alt="Google Play"
-            className="h-14 md:h-16 hover:scale-110 cursor-pointer"
-          />
-          <img
-            src={appStore}
-            alt="App Store"
-            className="h-14 md:h-16 hover:scale-110 cursor-pointer"
-          />
+      
+      <section className="relative py-32 px-6 mt-8 overflow-hidden">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8">
+          {/* Left Side: Mobile Mockups */}
+          <div className="relative w-full lg:w-1/2 flex justify-center">
+            <div className="relative w-64 sm:w-72 md:w-80 lg:w-96">
+              {/* Center Mobile */}
+              <img
+                src={middleimg}
+                alt="Mobile Mockup"
+                className="shadow-2xl rounded-xl relative top-2 left-10 w-44 h-auto sm:w-64 sm:h-auto lg:w-[255px] lg:h-[526px] lg:top-6 lg:right-[-50px] z-10 transition-all duration-500 hover:scale-105 hover:shadow-[0px_0px_20px_rgba(34,197,94,0.6)]"
+              />
+              {/* Left Mobile */}
+              <img
+                src={leftimg}
+                alt="Mobile Mockup"
+                className="absolute top-4 left-[-60px] shadow-2xl rounded-2xl opacity-90 w-36 h-auto sm:w-48 sm:h-auto lg:w-[181px] lg:h-[373px] lg:top-10 lg:left-[-110px] md:left-[-130px]"
+              />
+              {/* Right Mobile */}
+              <img
+                src={rightimg}
+                alt="Mobile Mockup"
+                className="absolute top-4 right-[-60px] shadow-2xl rounded-2xl opacity-90 w-36 h-auto sm:w-48 sm:h-auto lg:w-[181px] lg:h-[373px] lg:top-10 lg:right-[-70px] md:right-[-120px]"
+              />
+            </div>
+          </div>
+          {/* Green glowing background feature */}
+          <div
+  className="absolute w-72 h-72 bg-green-600 rounded-full opacity-20 blur-2xl animate-pulse-slow hidden lg:block left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+  data-aos="zoom-in"
+  data-aos-delay="200"
+/>
+          {/* Right Side: Text and Download Buttons with effects */}
+          <div className="lg:w-1/2 text-center lg:text-center relative z-10">
+            <h2
+              className="text-4xl md:text-5xl font-extrabold text-white mb-6 drop-shadow-xl"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              Coming Soon
+            </h2>
+            <p
+              className="text-lg text-white/90 max-w-xl leading-relaxed"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              The future is sustainable. You’re already part of it. <br />
+              <span className="font-semibold text-green-300">GoodFoot</span> is
+              how you start.
+            </p>
+            <div
+              className="flex justify-center lg:justify-center gap-5 mt-10"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <img
+                src={playStore}
+                alt="Google Play"
+                className="h-14 md:h-16 hover:scale-110 cursor-pointer"
+              />
+              <img
+                src={appStore}
+                alt="App Store"
+                className="h-14 md:h-16 hover:scale-110 cursor-pointer"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </div>

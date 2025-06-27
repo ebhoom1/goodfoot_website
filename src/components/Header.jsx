@@ -8,6 +8,7 @@ const Header = () => {
 
   const navLinks = [
     { label: "Home", path: "/" },
+    { label: "Team", path: "/team" },
     { label: "Brand Sponsorship", path: "/brand-sponsorship" },
     { label: "Privacy Policy", path: "/privacy-policy" },
     { label: "Terms", path: "/terms" },
@@ -82,7 +83,6 @@ const Header = () => {
             </nav>
           </div>
         )}
-
       </div>
     </header>
   );
