@@ -244,7 +244,7 @@ const TeamPage = () => {
               link: "https://www.linkedin.com/in/sahilsatheesh/",
             },
             {
-              name: "Faheem K. — Co-Founder & Director",
+              name: "Mohammed Faheem— Co-Founder & Director",
               desc: "The operations backbone and product integrator. Faheem drives implementation across partner sites, aligning client needs with EBHOOM’s AutoNerve and GoodFoot platforms for real-world impact.",
               link: "https://www.linkedin.com/in/fvh33m/",
             }].map((leader, index) => (
