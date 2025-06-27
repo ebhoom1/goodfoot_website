@@ -362,25 +362,25 @@ const TeamPage = () => {
           {[{
               name: "Sruthi P.R",
               role: "Software Developer",
-              desc: "The frontend dynamo behind GoodFoot’s mobile experience. Sruthi ensures every screen is fast, functional, and friendly — from eco-challenges to carbon scorecards.",
+              desc: "A backend developer who enjoys solving technical problems with clean code. Sruthi helps build our server systems, dashboards, and ESG reporting tools, ensuring they stay fast, reliable, and secure.",
               link: "https://www.linkedin.com/in/sruthi-p-r-794a79259/",
             },
             {
               name: "Anusree Sudheesh",
               role: "Software Developer",
-              desc: "The glue behind integrations. Anusree focuses on API orchestration, form validation, and ESG logic pipelines that power our compliance frameworks and reporting modules.",
+              desc: "Anusree connects our frontend and backend logic, especially in our ESG and compliance tools. She helps ensure that data flows correctly, forms behave as expected, and reports are generated without a hitch.",
               link: "https://www.linkedin.com/in/anusree-sudheesh/",
             },
             {
               name: "Krishnadev V",
               role: "Software Developer",
-              desc: "A full-stack problem solver with a flair for clean code and modular design. Krishnadev specializes in backend logic, dashboard systems, and scalable cloud deployments.",
+              desc: "Krishnadev works on our mobile app, GoodFoot. With a strong eye for design and detail, he helps bring features like carbon tracking, challenges, and community tools into a smooth app experience for users.",
               link: "https://www.linkedin.com/in/krishnadevv/",
             },
             {
               name: "Mohammed Irfan",
               role: "Software Developer",
-              desc: "UI/UX meets real-time tech. Irfan brings EBHOOM’s EMS and ESG dashboards to life with intuitive interfaces and socket-driven data visualizations.",
+              desc: "Irfan is a frontend developer who focuses on making our dashboards and apps look clean and work smoothly. He brings real-time data to life with charts, maps, and user-friendly interfaces that are easy to use on any screen.",
               link: "https://www.linkedin.com/in/mohammed-irfan-264a8935b/",
             }].map((member, index) => (
             <div
