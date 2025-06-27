@@ -183,75 +183,78 @@ export default function Home() {
         ))}
       </section>
 
-      
-      <section className="relative py-32 px-6 mt-8 overflow-hidden">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8">
-          {/* Left Side: Mobile Mockups */}
-          <div className="relative w-full lg:w-1/2 flex justify-center">
-            <div className="relative w-64 sm:w-72 md:w-80 lg:w-96">
-              {/* Center Mobile */}
-              <img
-                src={middleimg}
-                alt="Mobile Mockup"
-                className="shadow-2xl rounded-xl relative top-2 left-10 w-44 h-auto sm:w-64 sm:h-auto lg:w-[255px] lg:h-[526px] lg:top-6 lg:right-[-50px] z-10 transition-all duration-500 hover:scale-105 hover:shadow-[0px_0px_20px_rgba(34,197,94,0.6)]"
-              />
-              {/* Left Mobile */}
-              <img
-                src={leftimg}
-                alt="Mobile Mockup"
-                className="absolute top-4 left-[-60px] shadow-2xl rounded-2xl opacity-90 w-36 h-auto sm:w-48 sm:h-auto lg:w-[181px] lg:h-[373px] lg:top-10 lg:left-[-110px] md:left-[-130px]"
-              />
-              {/* Right Mobile */}
-              <img
-                src={rightimg}
-                alt="Mobile Mockup"
-                className="absolute top-4 right-[-60px] shadow-2xl rounded-2xl opacity-90 w-36 h-auto sm:w-48 sm:h-auto lg:w-[181px] lg:h-[373px] lg:top-10 lg:right-[-70px] md:right-[-120px]"
-              />
-            </div>
-          </div>
-          {/* Green glowing background feature */}
-          <div
-  className="absolute w-72 h-72 bg-green-600 rounded-full opacity-20 blur-2xl animate-pulse-slow hidden lg:block left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
-  data-aos="zoom-in"
-  data-aos-delay="200"
-/>
-          {/* Right Side: Text and Download Buttons with effects */}
-          <div className="lg:w-1/2 text-center lg:text-center relative z-10">
-            <h2
-              className="text-4xl md:text-5xl font-extrabold text-white mb-6 drop-shadow-xl"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              Coming Soon
-            </h2>
-            <p
-              className="text-lg text-white/90 max-w-xl leading-relaxed"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              The future is sustainable. You’re already part of it. <br />
-              <span className="font-semibold text-green-300">GoodFoot</span> is
-              how you start.
-            </p>
-            <div
-              className="flex justify-center lg:justify-center gap-5 mt-10"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <img
-                src={playStore}
-                alt="Google Play"
-                className="h-14 md:h-16 hover:scale-110 cursor-pointer"
-              />
-              <img
-                src={appStore}
-                alt="App Store"
-                className="h-14 md:h-16 hover:scale-110 cursor-pointer"
-              />
-            </div>
-          </div>
+      <section className="relative py-24 sm:py-28 px-4 sm:px-6 overflow-hidden">
+  <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-10">
+    
+    {/* Left Side: Mobile Mockups */}
+    <div className="relative w-full lg:w-1/2 flex justify-center z-10 mb-12 lg:mb-0">
+      <div className="relative w-64 sm:w-72 md:w-80 lg:w-96">
+        {/* Center Mobile */}
+        <img
+          src={middleimg}
+          alt="Mobile Mockup"
+          className="shadow-2xl rounded-xl relative top-2 left-10 w-44 h-auto sm:w-64 sm:h-auto lg:w-[255px] lg:h-[526px] lg:top-6 lg:right-[-50px] z-10 transition-all duration-500 hover:scale-105 hover:shadow-[0px_0px_20px_rgba(34,197,94,0.6)]"
+        />
+        {/* Left Mobile */}
+        <img
+          src={leftimg}
+          alt="Mobile Mockup"
+          className="absolute top-4 left-[-60px] shadow-2xl rounded-2xl opacity-90 w-36 h-auto sm:w-48 sm:h-auto lg:w-[181px] lg:h-[373px] lg:top-10 lg:left-[-110px] md:left-[-130px] transform rotate-[15deg] scale-95"
+        />
+        {/* Right Mobile */}
+        <img
+          src={rightimg}
+          alt="Mobile Mockup"
+          className="absolute top-4 right-[-60px] shadow-2xl rounded-2xl opacity-90 w-36 h-auto sm:w-48 sm:h-auto lg:w-[181px] lg:h-[373px] lg:top-10 lg:right-[-70px] md:right-[-120px]"
+        />
+      </div>
+    </div>
+
+    {/* Right Side: Text and Download Buttons with background glow */}
+    <div className="lg:w-1/2 w-full relative text-center z-10 px-4">
+      {/* Glowing background behind text content */}
+      <div className="absolute inset-0 flex items-center justify-center z-0">
+        <div className="w-72 h-72 bg-green-500 rounded-full opacity-20 blur-3xl animate-pulse-slow" />
+      </div>
+
+      {/* Foreground content */}
+      <div className="relative z-10">
+        <h2
+          className="text-4xl sm:text-5xl md:text-5xl font-extrabold text-white mb-6 drop-shadow-xl"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
+          Coming Soon
+        </h2>
+        <p
+          className="text-base sm:text-lg md:text-xl text-white/90 max-w-xl mx-auto leading-relaxed"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          The future is sustainable. You’re already part of it. <br />
+          <span className="font-semibold text-green-300">GoodFoot</span> is how you start.
+        </p>
+        <div
+          className="flex justify-center gap-5 mt-8"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <img
+            src={playStore}
+            alt="Google Play"
+            className="h-12 sm:h-14 md:h-16 hover:scale-110 transition-transform duration-200 cursor-pointer"
+          />
+          <img
+            src={appStore}
+            alt="App Store"
+            className="h-12 sm:h-14 md:h-16 hover:scale-110 transition-transform duration-200 cursor-pointer"
+          />
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
     </div>
   );
 }
