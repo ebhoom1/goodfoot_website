@@ -199,7 +199,7 @@ export default function Home() {
         <img
           src={leftimg}
           alt="Mobile Mockup"
-          className="absolute top-4 left-[-60px] shadow-2xl rounded-2xl opacity-90 w-36 h-auto sm:w-48 sm:h-auto lg:w-[181px] lg:h-[373px] lg:top-10 lg:left-[-110px] md:left-[-130px] transform rotate-[15deg] scale-95"
+          className="absolute top-4 left-[-60px] shadow-2xl rounded-2xl opacity-90 w-36 h-auto sm:w-48 sm:h-auto lg:w-[181px] lg:h-[373px] lg:top-10 lg:left-[-110px] md:left-[-130px]"
         />
         {/* Right Mobile */}
         <img
