@@ -191,13 +191,14 @@ export default function Home() {
       <div className="relative w-64 sm:w-72 md:w-80 lg:w-96">
         {/* Center Mobile */}
         <img
-          src={middleimg}
+                  src={leftimg}
+
           alt="Mobile Mockup"
           className="shadow-2xl rounded-xl relative top-2 left-10 w-44 h-auto sm:w-64 sm:h-auto lg:w-[255px] lg:h-[526px] lg:top-6 lg:right-[-50px] z-10 transition-all duration-500 hover:scale-105 hover:shadow-[0px_0px_20px_rgba(34,197,94,0.6)]"
         />
         {/* Left Mobile */}
         <img
-          src={leftimg}
+          src={middleimg}
           alt="Mobile Mockup"
           className="absolute top-4 left-[-60px] shadow-2xl rounded-2xl opacity-90 w-36 h-auto sm:w-48 sm:h-auto lg:w-[181px] lg:h-[373px] lg:top-10 lg:left-[-110px] md:left-[-130px]"
         />
