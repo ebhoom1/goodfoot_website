@@ -17,6 +17,7 @@ import rightimg from "../../assets/images/rightimg.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+const EARLY_ACCESS_FORM_URL = "https://forms.gle/YnHJpoBGib2Fr8457";
 const sectionsData = [
   {
     title: "Built for People Who Care",
@@ -113,6 +114,21 @@ export default function Home() {
                 real-world challenges. Join communities and support your
                 workplace’s green goals.
               </p>
+                {/* ✅ New: Early Access CTA */}
+              <div className="flex justify-center mb-6" data-aos="zoom-in" data-aos-delay="350">
+                <a
+                  href={EARLY_ACCESS_FORM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-xl px-6 py-3 text-base font-semibold bg-green-500 hover:bg-green-400 text-black shadow-[0_0_0_3px_rgba(34,197,94,0.25)] hover:shadow-[0_0_0_6px_rgba(34,197,94,0.2)] transition-all duration-200"
+                >
+                  Get Early Access
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5"
+                       viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M12.293 2.293a1 1 0 011.414 0L19 7.586a2 2 0 010 2.828l-7 7a1 1 0 11-1.414-1.414L15.586 11H4a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/>
+                  </svg>
+                </a>
+              </div>
               <div
                 className="flex justify-center gap-6"
                 data-aos="zoom-in"

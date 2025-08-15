@@ -239,12 +239,12 @@ const TeamPage = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {[{
-              name: "Sahil Satheesh. — Co-Founder & CEO",
+              name: "Sahil Satheesh — Co-Founder & CEO",
               desc: "A systems thinker and sustainability strategist. Sahil leads EBHOOM’s direction, IoT architecture, and ESG impact roadmap with a sharp focus on industrial automation and clean tech scalability.",
               link: "https://www.linkedin.com/in/sahilsatheesh/",
             },
             {
-              name: "Mohammed Faheem— Co-Founder & Director",
+              name: "Mohammed Faheem — Co-Founder & Director",
               desc: "The operations backbone and product integrator. Faheem drives implementation across partner sites, aligning client needs with EBHOOM’s AutoNerve and GoodFoot platforms for real-world impact.",
               link: "https://www.linkedin.com/in/fvh33m/",
             }].map((leader, index) => (
